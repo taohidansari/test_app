@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/screens/HomeScreen.dart';
 
-void main() {
+main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Container(
-        child: Text('hello world test app'),
-      ),
-    );
+    return MaterialApp(home: HomeScreen());
   }
 }
